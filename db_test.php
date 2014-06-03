@@ -1,7 +1,8 @@
-if (!$link) {
-3	die('接続失敗！
-4	'.mysql_error());
-5	} else {
-6	echo '接続成功！';
-7	}
-8	?&gt;
+<?php
+	$link = mysqli_connect('localhost', 'root', '');
+	if (!$link) {}
+		die('接続失敗！<br>'.mysql_error());
+	} else {
+		echo '接続成功！';
+	}
+?>
